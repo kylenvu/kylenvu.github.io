@@ -1,4 +1,5 @@
 h1 {
+  padding: 30px;
   text-align: center;
 }
 
@@ -8,8 +9,44 @@ html {
 }
 
 body {
-  font-size: 16px;
   background: rgb(149, 194, 215);
+  font-size: 16px;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.detail-image {
+  width: 50%;
+}
+
+.nav-top {
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-top li {
+  border-right: 1px solid #bbb;
+  float: left;
+}
+
+.nav-top li a, .nav-top li strong {
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-top li a:hover, .nav-top li strong:hover {
+  background-color: #111;
 }
 
 .thumbnail-list {
@@ -22,14 +59,14 @@ body {
   width: 50%;
 }
 
-.thumbnail-item + .thumbnail-item {
+.thumbnail-item+.thumbnail-item {
   margin-top: 10px;
 }
 
 .thumbnail-item {
-  display: block;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  display: block;
 }
 
 .thumbnail-href {
@@ -37,11 +74,10 @@ body {
 }
 
 .thumbnail-title {
-  display: block;
-  margin: 0;
-  padding: 4px 10px;
   background: rgb(96, 125, 139);
   color: rgb(202, 238, 255);
-
+  display: block;
   font-size: 18px;
+  margin: 0;
+  padding: 4px 10px;
 }
