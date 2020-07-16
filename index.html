@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
 <body>
@@ -16,12 +17,32 @@
   </header>
 
   <main>
-    <nav>
+    <!-- <nav>
       <ul class="nav-top">
         <li class="active"><strong>Home</strong></li>
         <li><a href="page1.html">Why Am I in This Course?</a></li>
         <li><a href="page2.html">Some Interesting Pictures</a></li>
       </ul>
+    </nav> -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">KV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" ariea-expanded="false" area-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="page1.html">Why Am I in This Course?</a>
+          <a class="nav-item nav-link" href="page2.html">Some Interesting Pictures</a>
+        </div>
+      </div>
+
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </nav>
 
     <div class="detail-image-container">
@@ -34,7 +55,7 @@
       <h2>About Me</h2>
 
       <p>
-        Hello! My name is Kyle Vu, and I am a huge purple dinosaur with a flaming head
+        Hello! My name is <span class="my-name text-light">Kyle Vu</span>, and I am a huge purple dinosaur with a flaming head
         and two tails. I am a senior at Dino Gate Academy studying to be a mathematician.
         My interests include running, hunting, dodging magma from volcano eruptions and
         surviving meteorites from outer space.
@@ -43,36 +64,65 @@
 
     <h2>Contact Me</h2>
 
-    <form class="form-contact" action="index.html" method="post">
-      <ul>
-        <li>
-          <label for="_name">Name:</label>
-          <input class="form-control" type="text" id="_name" name="user_name">
-        </li>
+    <p>
+      When contacting me, please be sure to include:
+    </p>
 
-        <li>
-          <label for="_mail">E-mail:</label>
-          <input class="form-control" type="email" id="_mail" name="user_email" placeholder="email@example.com">
-        </li>
+    <ul class="alt-ul-bullet text-danger">
+      <li>
+        <span>Your name</span>
+      </li>
 
-        <li>
-          <label for="_msg">Message:</label>
-          <textarea class="form-control" id="msg" name="user_msg"></textarea>
-        </li>
+      <li>
+        <span>Your email so I can send you a response</span>
+      </li>
 
-        <li class="button">
-          <button type="submit" name="button_submit">Submit</button>
-        </li>
-      </ul>
+      <li>
+        <span>A short message as to why you're contacting me</span>
+      </li>
+    </ul>
 
+    <p>Some netiquette for shooting me messages:</p>
+
+    <ol class="alt-ol-bullet text-warning">
+      <li>
+        <span>Messages must be appropriate and "safe for work"</span>
+      </li>
+
+      <li>
+        <span>Please keep messages short, but detailed</span>
+      </li>
+
+      <li>
+        <span>Feel free to contact me for anything</span>
+      </li>
+    </ol>
+
+    <form>
+      <div class="form-group">
+        <label for="input_name">Name</label>
+        <input type="text" class="form-control" id="input_name">
+      </div>
+
+      <div class="form-group">
+        <label for="input_email">Email address</label>
+        <input type="email" class="form-control" id="input_email">
+      </div>
+
+      <div class="form-group">
+        <label for="input_message">Message</label>
+        <textarea class="form-control" id="input_message"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
   </main>
 
-<!-- JavaScript for Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- JavaScript for Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 

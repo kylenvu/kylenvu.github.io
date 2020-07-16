@@ -4,25 +4,41 @@
 <head>
   <meta charset="utf-8">
   <title>HTMLBasics</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <h1>Why Am I in This Course?</h1>
   </header>
-  <nav>
-    <ul class="nav-top">
-      <li><a href="index.html">Home</a></li>
-      <li class="active"><strong>Why Am I in This Course?</strong></li>
-      <li><a href="page2.html">Some Interesting Pictures</a></li>
-    </ul>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">KV</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" ariea-expanded="false" area-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link active" href="page1.html">Why Am I in This Course?</a>
+        <a class="nav-item nav-link" href="page2.html">Some Interesting Pictures</a>
+      </div>
+    </div>
+
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </nav>
 
   <section>
     <h2>Experience with Web Development</h2>
 
-    <p>
+    <p class="text-danger">
       I have no experience with web development and have never used HTML or CSS before.
       The closest I have come to "web development/design" is through using website
       builders such as Weebly.com.  This will be my first time learning about web design
@@ -33,13 +49,18 @@
   <section>
     <h2>What do I Hope to Learn</h2>
 
-    <p>
+    <p class="text-warning">
       I have always been interested in what all the code meant when you hit F12 and
       opened up the browser devleper tools.  I am very interested to learn about how
       to code using HTML and CSS as well as using JavaScript.  Learning JavaScript will be
       especially useful to me since GeoGebra allows you to write code using JavaScript.
     </p>
   </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 

@@ -4,19 +4,35 @@
 <head>
   <meta charset="utf-8">
   <title>HTMLBasics</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <h1 class="logo-text">Some Interesting Pictures</h1>
   </header>
-  <nav>
-    <ul class="nav-top">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="page1.html">Why Am I in This Course?</a></li>
-      <li class="active"><strong>Some Interesting Pictures</strong></li>
-    </ul>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">KV</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" ariea-expanded="false" area-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="page1.html">Why Am I in This Course?</a>
+        <a class="nav-item nav-link active" href="page2.html">Some Interesting Pictures</a>
+      </div>
+    </div>
+
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </nav>
 
   <section>
@@ -51,7 +67,7 @@
           like if they used different angles of rotation.  The GIF runs through multiple
           distributions with varying angles of rotation.  This showcases some of the beauties
           of mathematics and how they show up in nature.  For more details on this, check
-          out the following video <a class="thumbnail-title" href="https://youtu.be/sj8Sg8qnjOg">here.</a>
+          out the following video <a class="thumbnail-title super-link" href="https://youtu.be/sj8Sg8qnjOg">here.</a>
         </span>
       </li>
 
@@ -65,10 +81,10 @@
           for all the zoom-in videos done on it.  The reason why these zoom-in videos are
           so interesting is that the set is a fractal, and so no matter how close or far away
           you zoom into the set, you will always end up seeing the same thing.  For those
-          mathematically inclined, a video on the Mandelbrot Set is included <a class="thumbnail-title" href="https://youtu.be/NGMRB4O922I">here.</a>
+          mathematically inclined, a video on the Mandelbrot Set is included <a class="thumbnail-title super-link" href="https://youtu.be/NGMRB4O922I">here.</a>
         </span>
         <span class="thumbnail-title">
-          A zoom-in video can be viewed <a class="thumbnail-title" href="https://youtu.be/0jGaio87u3A">here.</a>
+          A zoom-in video can be viewed <a class="thumbnail-title super-link" href="https://youtu.be/0jGaio87u3A">here.</a>
         </span>
           <br>
         <span class="thumbnail-title">
@@ -90,6 +106,11 @@
       </li>
     </ul>
   </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
